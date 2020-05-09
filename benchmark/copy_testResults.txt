@@ -1,0 +1,179 @@
+============================= test session starts =============================
+platform win32 -- Python 3.8.2, pytest-5.4.1, py-1.8.1, pluggy-0.13.1 -- c:\users\pratibha\env3\scripts\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\Pratibha\cm\cloudmesh-storage, inifile: pytest.ini
+plugins: cov-2.8.1
+collecting ... collected 11 items
+
+tests/copy/Test_storage_service.py::TestStorageService::test_create_source 
+[35m
+# ######################################################################
+# test_create_source \tests\copy\Test_storage_service.py 21
+# ######################################################################
+[0m
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_localtoaws 
+[35m
+# ######################################################################
+# test_localtoaws \tests\copy\Test_storage_service.py 32
+# ######################################################################
+[0m
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_localtogoogle 
+[35m
+# ######################################################################
+# test_localtogoogle \tests\copy\Test_storage_service.py 53
+# ######################################################################
+[0m
+<Bucket: gcp_516>
+Bucket:  <Bucket: gcp_516>
+Source:  C:/Users/Pratibha/.cloudmesh/storage/test/test_file_size_1.txt
+Destination:  local_to_google_fileSize_1.txt
+File C:/Users/Pratibha/.cloudmesh/storage/test/test_file_size_1.txt uploaded to local_to_google_fileSize_1.txt.
+<Bucket: gcp_516>
+Bucket:  <Bucket: gcp_516>
+Source:  C:/Users/Pratibha/.cloudmesh/storage/test/test_file_size_5.txt
+Destination:  local_to_google_fileSize_5.txt
+File C:/Users/Pratibha/.cloudmesh/storage/test/test_file_size_5.txt uploaded to local_to_google_fileSize_5.txt.
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_awstolocal {'cm': {'number': 0, 'name': 'local_to_aws_fileSize_1.txt:C:/Users/Pratibha/.cloudmesh/storage/test/aws_to_local_fileSize_1.txt', 'kind': 'storage', 'id': 'ced44c22-90ea-11ea-a2e5-68f728d306f4', 'cloud': 'aws', 'collection': 'aws-storage', 'created': datetime.datetime(2020, 5, 8, 5, 14, 35, 498000), 'modified': '2020-05-08 05:14:36.968517'}, 'action': 'get', 'source': 'local_to_aws_fileSize_1.txt', 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/test/aws_to_local_fileSize_1.txt', 'recursive': True, 'status': 'waiting'}
+{'cm': {'number': 0, 'name': 'local_to_aws_fileSize_5.txt:C:/Users/Pratibha/.cloudmesh/storage/test/aws_to_local_fileSize_5.txt', 'kind': 'storage', 'id': 'd713297a-90ea-11ea-8c5e-68f728d306f4', 'cloud': 'aws', 'collection': 'aws-storage', 'created': '2020-05-08 05:14:50.073380', 'modified': '2020-05-08 05:14:50.807507'}, 'action': 'get', 'source': 'local_to_aws_fileSize_5.txt', 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/test/aws_to_local_fileSize_5.txt', 'recursive': True, 'status': 'waiting'}
+
+[35m
+# ######################################################################
+# test_awstolocal \tests\copy\Test_storage_service.py 74
+# ######################################################################
+[0m
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_googletolocal 
+[35m
+# ######################################################################
+# test_googletolocal \tests\copy\Test_storage_service.py 95
+# ######################################################################
+[0m
+{'action': 'get',
+ 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/test/google_to_local_fileSize_1.txt',
+ 'message': 'Source Downloaded',
+ 'objectlist': ['local_to_google_fileSize_1.txt'],
+ 'source': 'local_to_google_fileSize_1.txt'}
+{'action': 'get',
+ 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/test/google_to_local_fileSize_5.txt',
+ 'message': 'Source Downloaded',
+ 'objectlist': ['local_to_google_fileSize_5.txt'],
+ 'source': 'local_to_google_fileSize_5.txt'}
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_awstogoogle {'cm': {'number': 0, 'name': 'local_to_aws_fileSize_1.txt:C:/Users/Pratibha/.cloudmesh/storage/tmp/67ddb858-2d77-4e57-af3f-638fb2b6251b/local_to_aws_fileSize_1.txt', 'kind': 'storage', 'id': 'e4704c7e-90ea-11ea-9986-68f728d306f4', 'cloud': 'aws', 'collection': 'aws-storage', 'created': '2020-05-08 05:15:12.496193', 'modified': '2020-05-08 05:15:13.242501'}, 'action': 'get', 'source': 'local_to_aws_fileSize_1.txt', 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/tmp/67ddb858-2d77-4e57-af3f-638fb2b6251b/local_to_aws_fileSize_1.txt', 'recursive': True, 'status': 'waiting'}
+{'cm': {'number': 0, 'name': 'local_to_aws_fileSize_5.txt:C:/Users/Pratibha/.cloudmesh/storage/tmp/aab6df28-a191-488d-877c-669785d09e7c/local_to_aws_fileSize_5.txt', 'kind': 'storage', 'id': 'ef220fef-90ea-11ea-9a0a-68f728d306f4', 'cloud': 'aws', 'collection': 'aws-storage', 'created': '2020-05-08 05:15:30.447107', 'modified': '2020-05-08 05:15:31.182678'}, 'action': 'get', 'source': 'local_to_aws_fileSize_5.txt', 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/tmp/aab6df28-a191-488d-877c-669785d09e7c/local_to_aws_fileSize_5.txt', 'recursive': True, 'status': 'waiting'}
+
+[35m
+# ######################################################################
+# test_awstogoogle \tests\copy\Test_storage_service.py 116
+# ######################################################################
+[0m
+<Bucket: gcp_516>
+Bucket:  <Bucket: gcp_516>
+Source:  C:/Users/Pratibha/.cloudmesh/storage/tmp/67ddb858-2d77-4e57-af3f-638fb2b6251b/local_to_aws_fileSize_1.txt
+Destination:  aws_to_google_fileSize_1.txt
+File C:/Users/Pratibha/.cloudmesh/storage/tmp/67ddb858-2d77-4e57-af3f-638fb2b6251b/local_to_aws_fileSize_1.txt uploaded to aws_to_google_fileSize_1.txt.
+<Bucket: gcp_516>
+Bucket:  <Bucket: gcp_516>
+Source:  C:/Users/Pratibha/.cloudmesh/storage/tmp/aab6df28-a191-488d-877c-669785d09e7c/local_to_aws_fileSize_5.txt
+Destination:  aws_to_google_fileSize_5.txt
+File C:/Users/Pratibha/.cloudmesh/storage/tmp/aab6df28-a191-488d-877c-669785d09e7c/local_to_aws_fileSize_5.txt uploaded to aws_to_google_fileSize_5.txt.
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_googletoaws 
+[35m
+# ######################################################################
+# test_googletoaws \tests\copy\Test_storage_service.py 133
+# ######################################################################
+[0m
+{'action': 'get',
+ 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/tmp/9900cbf8-5be3-4685-8d19-23da1afed873/local_to_google_fileSize_1.txt',
+ 'message': 'Source Downloaded',
+ 'objectlist': ['local_to_google_fileSize_1.txt'],
+ 'source': 'local_to_google_fileSize_1.txt'}
+{'action': 'get',
+ 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/tmp/08000195-f36b-4916-abf5-8013f6606c60/local_to_google_fileSize_5.txt',
+ 'message': 'Source Downloaded',
+ 'objectlist': ['local_to_google_fileSize_5.txt'],
+ 'source': 'local_to_google_fileSize_5.txt'}
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_googletoawsDir 
+[35m
+# ######################################################################
+# test_googletoawsDir \tests\copy\Test_storage_service.py 150
+# ######################################################################
+[0m
+{'action': 'get',
+ 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/tmp/24b123d5-5052-4100-83d1-02f060e2b854/a1/',
+ 'message': 'Source Downloaded',
+ 'objectlist': ['a1/', 'a1/test1.txt'],
+ 'source': 'a1/'}
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_awstogoogleDir {'cm': {'number': 0, 'name': 'uploadtest1.txt:C:/Users/Pratibha/.cloudmesh/storage/tmp/5650fc0c-cfec-4f8e-9ef7-c74f3850beff/uploadtest1.txt', 'kind': 'storage', 'id': '1bd314f9-90eb-11ea-bc21-68f728d306f4', 'cloud': 'aws', 'collection': 'aws-storage', 'created': '2020-05-08 05:16:45.675839', 'modified': '2020-05-08 05:16:46.568323'}, 'action': 'get', 'source': 'uploadtest1.txt', 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/tmp/5650fc0c-cfec-4f8e-9ef7-c74f3850beff/uploadtest1.txt', 'recursive': True, 'status': 'waiting'}
+
+[35m
+# ######################################################################
+# test_awstogoogleDir \tests\copy\Test_storage_service.py 167
+# ######################################################################
+[0m
+<Bucket: gcp_516>
+Bucket:  <Bucket: gcp_516>
+Source:  C:/Users/Pratibha/.cloudmesh/storage/tmp/5650fc0c-cfec-4f8e-9ef7-c74f3850beff/uploadtest1.txt
+Destination:  a2/testAwsToGoogle.txt
+File C:/Users/Pratibha/.cloudmesh/storage/tmp/5650fc0c-cfec-4f8e-9ef7-c74f3850beff/uploadtest1.txt uploaded to a2/testAwsToGoogle.txt.
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_googletoawsDir2 
+[35m
+# ######################################################################
+# test_googletoawsDir2 \tests\copy\Test_storage_service.py 185
+# ######################################################################
+[0m
+{'action': 'get',
+ 'destination': 'C:/Users/Pratibha/.cloudmesh/storage/tmp/8180978d-1678-469e-9eb2-27d209dfcf34/a1/testfolder/',
+ 'message': 'Source Downloaded',
+ 'objectlist': ['a1/testfolder/', 'a1/testfolder/testAwsToLocal.txt'],
+ 'source': 'a1/testfolder/'}
+PASSED
+tests/copy/Test_storage_service.py::TestStorageService::test_benchmark 
+
++--------------------------------+----------+--------+---------------------+-------+-----------+----------+---------+---------------------------------+
+| Name                           | Status   |   Time | Start               | tag   | Node      | User     | OS      | Version                         |
+|--------------------------------+----------+--------+---------------------+-------+-----------+----------+---------+---------------------------------|
+| local_to_aws_fileSize_1.txt    | Success  | 13.851 | 2020-05-08 05:13:47 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| local_to_aws_fileSize_5.txt    | Success  | 18.43  | 2020-05-08 05:14:01 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| local_to_google_fileSize_1.txt | Success  |  6.75  | 2020-05-08 05:14:19 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| local_to_google_fileSize_5.txt | Success  |  9.041 | 2020-05-08 05:14:26 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| aws_to_local_fileSize_1.txt    | Success  | 13.834 | 2020-05-08 05:14:35 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| aws_to_local_fileSize_5.txt    | Success  | 13.665 | 2020-05-08 05:14:49 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| google_to_local_fileSize_1.txt | Success  |  3.705 | 2020-05-08 05:15:03 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| google_to_local_fileSize_5.txt | Success  |  3.94  | 2020-05-08 05:15:06 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| aws_to_google_fileSize_1.txt   | Success  | 18.207 | 2020-05-08 05:15:10 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| aws_to_google_fileSize_5.txt   | Success  | 23.681 | 2020-05-08 05:15:28 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| google_to_aws_fileSize_1.txt   | Success  | 14.81  | 2020-05-08 05:15:52 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| google_to_aws_fileSize_5.txt   | Success  | 21.724 | 2020-05-08 05:16:07 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| google_to_aws_directory        | Success  | 14.49  | 2020-05-08 05:16:29 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| aws_to_google_directory        | Success  | 14.691 | 2020-05-08 05:16:43 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
+| google_to_aws_directory2       | Success  | 14.875 | 2020-05-08 05:16:58 | copy  | DESKTOP | Pratibha | Windows | ('10', '10.0.18362', 'SP0', '') |
++--------------------------------+----------+--------+---------------------+-------+-----------+----------+---------+---------------------------------+
+
+# csv,timer,status,time,start,tag,uname.node,user,uname.system,platform.version
+# csv,local_to_aws_fileSize_1.txt,Success,13.851,2020-05-08 05:13:47,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,local_to_aws_fileSize_5.txt,Success,18.43,2020-05-08 05:14:01,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,local_to_google_fileSize_1.txt,Success,6.75,2020-05-08 05:14:19,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,local_to_google_fileSize_5.txt,Success,9.041,2020-05-08 05:14:26,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,aws_to_local_fileSize_1.txt,Success,13.834,2020-05-08 05:14:35,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,aws_to_local_fileSize_5.txt,Success,13.665,2020-05-08 05:14:49,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,google_to_local_fileSize_1.txt,Success,3.705,2020-05-08 05:15:03,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,google_to_local_fileSize_5.txt,Success,3.94,2020-05-08 05:15:06,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,aws_to_google_fileSize_1.txt,Success,18.207,2020-05-08 05:15:10,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,aws_to_google_fileSize_5.txt,Success,23.681,2020-05-08 05:15:28,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,google_to_aws_fileSize_1.txt,Success,14.81,2020-05-08 05:15:52,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,google_to_aws_fileSize_5.txt,Success,21.724,2020-05-08 05:16:07,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,google_to_aws_directory,Success,14.49,2020-05-08 05:16:29,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,aws_to_google_directory,Success,14.691,2020-05-08 05:16:43,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+# csv,google_to_aws_directory2,Success,14.875,2020-05-08 05:16:58,copy,PratiSree,Pratibha,Windows,('10', '10.0.18362', 'SP0', '')
+
+PASSED
+
+======================= 11 passed in 211.37s (0:03:31) ========================
